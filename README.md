@@ -1,3 +1,5 @@
+```mermaid
+
 classDiagram
     class Department {
         +ObjectId id
@@ -28,3 +30,5 @@ classDiagram
     Department "1" --> "*" Course : oferece
     Professor "1" --> "*" Course : ministra
     Student "*" <--> "*" Course : matriculado
+
+    ```
