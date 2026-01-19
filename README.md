@@ -23,8 +23,12 @@ classDiagram
         +ObjectId id
         +String name
         +Int enrollment_year
-        +List courses
+        +List~Link~ courses
     }
 
-   
+    Department "1" --> "*" Professor
+    Department "1" --> "*" Course 
+    Professor "1" --> "*" Course 
+    Student "*" <--> "*" Course 
+
     ```
