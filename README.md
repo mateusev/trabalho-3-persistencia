@@ -23,12 +23,8 @@ classDiagram
         +ObjectId id
         +String name
         +Int enrollment_year
-        +List~Link~ courses
+        +List courses
     }
 
-    Department "1" --> "*" Professor : lotado_em
-    Department "1" --> "*" Course : oferece
-    Professor "1" --> "*" Course : ministra
-    Student "*" <--> "*" Course : matriculado
-
+   
     ```
