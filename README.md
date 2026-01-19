@@ -10,20 +10,20 @@ classDiagram
         +ObjectId id
         +String name
         +String title
-        +Link department
+        +department
     }
     class Course {
         +ObjectId id
         +String title
         +Int credits
-        +Link department
-        +Link professor
+        +department
+        +professor
     }
     class Student {
         +ObjectId id
         +String name
         +Int enrollment_year
-        +List~Link~ courses
+        +List courses
     }
 
     Department "1" --> "*" Professor
